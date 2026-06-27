@@ -84,8 +84,6 @@ FROM fish_market
 GROUP BY species
 ORDER BY avg_weight DESC;
 
-```
-<img width="447" height="505" alt="Print 1" src="https://github.com/user-attachments/assets/8f014e22-ab28-4930-a679-d217fde0e576" />
 
 ```
 
@@ -138,6 +136,9 @@ SELECT
 FROM fish_market
 GROUP BY species
 ORDER BY corr_weight_length DESC;
+```
+<img width="546" height="516" alt="fig2" src="https://github.com/user-attachments/assets/3f296cce-d5aa-4225-ac2f-2d99a2e928af" />
+
 
 ```
 
@@ -153,6 +154,10 @@ SELECT
 FROM fish_market
 GROUP BY species
 ORDER BY avg_volume_index DESC;
+
+```
+<img width="906" height="532" alt="fig 3" src="https://github.com/user-attachments/assets/8a13da20-19fc-403c-a566-5fec31d4627e" />
+
 
 ```
 
@@ -171,7 +176,9 @@ ORDER BY ABS(
     (weight - AVG(weight) OVER (PARTITION BY species)) /
     NULLIF(STDDEV(weight) OVER (PARTITION BY species), 0)
 ) DESC
-LIMIT 10;
+
+```
+<img width="687" height="530" alt="fig 4" src="https://github.com/user-attachments/assets/282ae998-d9a5-4245-a062-b52efe1c0f26" />
 
 ```
 
