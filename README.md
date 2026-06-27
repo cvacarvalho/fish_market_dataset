@@ -85,6 +85,9 @@ GROUP BY species
 ORDER BY avg_weight DESC;
 
 ```
+<img width="447" height="505" alt="Print 1" src="https://github.com/user-attachments/assets/8f014e22-ab28-4930-a679-d217fde0e576" />
+
+```
 
 ### Frequência de registros por espécie
 
