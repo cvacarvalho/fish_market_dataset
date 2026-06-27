@@ -46,6 +46,8 @@ A inspeção inicial permitiu:
    
 
 ## 2. Criação da Tabela no PostgreSQL
+sql
+```
 CREATE TABLE fish_market (
     id SERIAL PRIMARY KEY,
     species TEXT,
@@ -56,6 +58,8 @@ CREATE TABLE fish_market (
     height NUMERIC,
     width NUMERIC
 );
+
+```
 
 ## 3. Importação dos Dados (DBeaver)
 
@@ -83,7 +87,6 @@ SELECT species, AVG(weight) AS avg_weight
 FROM fish_market
 GROUP BY species
 ORDER BY avg_weight DESC;
-
 
 ```
 
